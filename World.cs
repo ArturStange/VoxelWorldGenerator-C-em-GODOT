@@ -97,9 +97,8 @@ public partial class World : Node3D
 			{
 				// A reconstrução de vizinhos é complexa, pois depende da direção.
 				// Vamos simplificar e reconstruir o chunk em todas as direções para teste.
-				// Para otimização, você faria um loop sobre a normal (1, 0, 0) para X+ e (-1, 0, 0) para X-.
 				
-				// Exemplo Simples (Requer otimização futura):
+				// Exemplo Simples (Requer otimização futura!!!):
 				for (int i = 0; i < 6; i++)
 				{
 					Vector3 neighborOffset = VoxelData.faceChecks[i] * VoxelData.ChunkWidth;
